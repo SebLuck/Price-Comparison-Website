@@ -1,0 +1,52 @@
+/* background of the footer */
+.footer {
+	background-color: black;
+	padding: 10px;
+	border-style: outset;
+
+}
+/* background of the header */
+.header{
+	background-color: white;
+	border-style: outset;
+}
+/* name of the website from the footer */
+.title_footer{
+    color: blue;
+	font-family: Algerian;
+
+}
+/* text "Follow us" */
+.follow{
+    color:  blue;
+}
+
+.copyright{
+    color: white;
+	font-size: 15px;
+}
+/* icon of the search button from the header*/
+.fa-search {
+    color: blue;
+	font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* icon of twitter and youtube */
+.fa-twitter {
+	background:  #55ACEE;
+	color: white;
+    text-decoration: none;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+}
+

@@ -1,0 +1,144 @@
+/* 
+background of each products */
+.product{
+    background-color:cyan;
+    color: black; 
+    margin-left: 250px;
+    width:1000px;
+    height:200px;
+    border-style: outset;
+
+}
+/* Set the product page to none so that the user does not have all the products that are displayed.
+The products will be displayed only when the user uses the search bar. */
+.product_page{
+    display: none;
+}
+
+/* The name of the website from the product page */
+.title_product {
+	color: blue;
+	font-family: Algerian;
+	font-size: 40px;
+    margin-right: 75%;
+    float: right;
+    cursor: pointer;
+}
+
+/* The logo of the website from the product page */
+.laptop_logo_product{
+	width: 100px;
+	height: 100px;
+    margin-left:0%;
+    cursor: pointer;
+}
+/* The search bar of product page */
+.search_bg_product{
+    padding: 6px 10px;
+
+    background: cyan;
+    font-size: 17px;
+    width: 50%;
+    float: right;
+    margin-top: -5%;
+    margin-right: 100px;
+    border-style: outset;
+
+
+}
+.search_bar_product{
+	width: 94%;
+}
+/* The description of the laptop can be clicked to go to the comparison page. */
+.link_desc{
+    text-decoration: none;
+    color:black;
+    font-size: 25px;
+    cursor: pointer;
+}
+/* Underline and turn the text to blue. When the cursor of the user will be on the description. */
+.link_desc:hover{
+    text-decoration: underline;
+    color: blue;
+}
+/* image of the laptop */
+.image{
+    width:250px;
+    height:200px;
+    float: left;
+    margin-right: 1%;
+}
+
+/* pagination styling */
+.pagination button{
+    padding: 10px 18px;
+    float: left;
+}
+/* pagination for the number pages */
+.pagination p{
+    padding: 10px 18px;
+    margin-top: -0.1%;
+    float: left;
+}
+.pagination{
+    margin-left: 250px;
+}
+/* Previous button */
+.previous{
+    display: none;
+    color: cyan;
+    background: none;
+    cursor: pointer;
+}
+.previous:hover{
+    display: none;
+    background-color: #031F3B;
+    color: blue;
+}
+/* Next button */
+.next{
+    color: cyan;
+    background: none;
+    cursor: pointer;
+}
+.next:hover{
+    background-color: #031F3B;
+    color: blue;
+}
+/* Last Button */
+.last{
+    color: cyan;
+    background: none;
+    cursor: pointer;
+}
+.last:hover{
+    background-color: #031F3B;
+    color: blue;
+}
+/* First Button */
+.first{
+    display: none;
+    color: cyan;
+    background: none;
+    cursor: pointer;
+}
+.first:hover{
+    display: none;
+    background-color: #031F3B;
+    color: blue;
+}
+/* The numbers of pages of the pagination */
+.numberPage{
+    color: cyan;
+    display: none;
+    background: none;
+    border: none;
+}
+/* change the background of the number page when the user is on that page */
+.active{
+    background-color: #031F3B;
+    color: blue;
+}
+
+
+

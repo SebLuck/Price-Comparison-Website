@@ -1,0 +1,55 @@
+/* background of the body */
+body{
+	background-color: gray;
+}
+/* name of the website from the main page */
+.title_main {
+	color: blue;
+	text-align: center;
+	font-family: Algerian;
+	font-size: 40px;
+	margin-right: 39%;
+	float: right;
+
+}
+/* logo of the website from the main page */
+.laptop_logo_main{
+	width: 100px;
+	height: 100px;
+	margin-left: 35%;
+}
+/* Image of a laptop from the welcome message */
+.laptop{
+	
+	width: 200px;
+	height: 200px;
+	margin-left: 43%;
+}
+/* search bar of the main page */
+.search_bg_main{
+
+    padding: 6px 10px;
+    margin-top: 40px;
+    margin-left: 23%;
+    background: cyan;
+    font-size: 17px;
+	width:50%;
+	border-style: outset;
+
+}
+.search_bar_main{
+	width: 94%;
+}
+.welcome_message{
+	background-image: url("../image/bgWelcome.jpg");
+	padding: 10px;	
+	color: blue;
+	text-align:center;
+	font-style: italic;
+	font-size: 20px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	
+
+
+}

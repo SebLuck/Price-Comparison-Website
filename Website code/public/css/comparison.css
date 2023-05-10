@@ -1,0 +1,52 @@
+/* Set the comparison page to none so that it does not show when the user goes to the main page.
+It will only be displayed when the user clicks on a laptop from the product page. */
+.comparison_page{
+    display: none;
+}
+/* button to go back to the product page */
+.backImage{
+    cursor: pointer;
+    width:100px;
+    height:100px;
+}
+/* Description of the laptop, which the user can click to go to the website that sells the laptop */
+.link_desc_comp{
+    text-decoration: none;
+    color:black;
+    font-size: 50px;
+    cursor: pointer;
+}
+/* Underline the description in blue when the user puts his/her cursor on it. */
+.link_desc_comp:hover{
+    text-decoration: underline;
+    color: blue;
+}
+/* image of the laptop that the user is looking for */
+.image_comp{
+    width:400px;
+    height:380px;
+    margin-right: 1%;
+    float: left;
+}
+/* The background of the image and description of the laptop */
+.image_desc{
+    background-color:cyan;
+    color: black; 
+    margin-right: 50px;
+    width:1500px;
+    height:380px;
+    border-style: outset;
+}
+/* background of the price and url */
+.price_url_comp{
+    background-color:cyan;
+    color: black; 
+    border-style: outset;
+    font-size: 25px;
+}
+.price_comp{
+    float: left;
+}
+.url_comp{
+    margin-left: 87%;
+}

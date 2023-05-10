@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Product Page</title>
+		<!-- Add icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- css file -->
+		<link rel="stylesheet" type="text/css" href="css/footer_header.css" >
+        <link rel="stylesheet" type="text/css" href="css/product.css" >
+		<link rel="stylesheet" type="text/css" href="css/main.css" >
+		<link rel="stylesheet" type="text/css" href="css/comparison.css" >
+
+		<!-- Vue development version, includes helpful console warnings -->
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+		<!-- Axios library -->
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>	
+        
+	</head>
+    <body>
+		<div id="shopping" class="shopping">
+			<!-- Main page -->
+			<div class="main_page">
+				<div class="main_header">
+					<!-- Title and logo -->
+					<div class="header">
+						<img class="laptop_logo_main" src="image/logo.png">
+						<h1 class="title_main"> PComparison</h1>
+					</div>
+					<!-- Search Bar -->
+					<div class="search_bg_main">
+						<input v-model="searchLaptop" type="text"   class="search_bar_main" id="search_bar">
+						<button @click="searchLaptops"  id="search_button"><i class="fa fa-search"></i></button>
+					</div>
+				</div>
+				<!-- laptop image -->
+				<div>
+					<img class="laptop" src="image/msi.png">
+		
+				</div>
+				<!-- Welcome message -->
+				<div class="welcome_message">
+					<p> Welcome to this price comparison website</p>
+					<p> If you want to buy laptops online, </p>
+					<p> use this website to help you choose your laptops.</p>
+				</div>
+			</div>
+			<!-- Product Page -->
+			<div class="product_page">
+							<!-- Heading  -->
+				<div class = "product_header">
+					<div class="header">
+								<!-- Logo and Title  -->
+						<img @click="mainPage" class="laptop_logo_product" src="image/logo.png">
+						<h1 @click="mainPage" class="title_product"> PComparison</h1>
+							<!-- Search Bar  -->
+						<div class="search_bg_product">
+							<input v-model="searchLaptop"   type="text" class="search_bar_product" id="search_bar">
+							<button @click="searchLaptops"  id="search_button"><i class="fa fa-search"></i></button>		
+						</div>
+						
+					</div>
+				</div>
+				<br>
+	
+					<!-- Products  -->
+				<div v-for="laptop in laptops">
+					<div class="product">
+						<div>
+							<a> <img :src="laptop.image" class="image"> </a>
+						</div>
+						<div class="desc_price"> 
+							<a class="link_desc"  @click="comparisonPage(laptop.id)"> {{laptop.brand}} {{laptop.description}}</a>
+		
+						</div> 
+					</div>
+				</div>
+	
+				<br>
+							<!-- Pagination  -->
+				<div class="pagination">
+					<button @click="firstPage" class="first" id="first">First</button>
+					<button @click="previousPage" class="previous" id="previous"> Previous</button>
+					<div id="page_number" class="page_number">
+
+					</div>
+					<button @click="nextPage" class="next" id="next">Next </button>
+					<button @click="lastPage" class="last" id="last">Last</button>
+				</div>
+			</div>
+			<!-- Comparison page -->
+			<div class="comparison_page">
+				<!-- Heading  -->
+				<div class = "product_header">
+					<div class="header">
+								<!-- Logo and Title  -->
+						<img @click="mainPage" class="laptop_logo_product" src="image/logo.png">
+						<h1 @click="mainPage" class="title_product"> PComparison</h1>
+							<!-- Search Bar  -->
+						<div class="search_bg_product">
+							<input v-model="searchLaptop"   type="text" class="search_bar_product" id="search_bar">
+							<button @click="searchLaptops"  id="search_button"><i class="fa fa-search"></i></button>		
+						</div>
+						
+					</div>
+				</div>
+				<br>
+				<!-- Price Comparison -->
+				<div v-for="laptopDetail in laptopDetails">
+					<!-- description and image -->
+					<div class="image_desc">
+						<img :src="laptopDetail.image" class="image_comp">
+						<div>
+							<a class="link_desc_comp" :href="laptopDetail.url">{{laptopDetail.brand}} {{laptopDetail.description}}</a>
+						</div>
+					</div>
+					<br>
+					<hr>
+					<div v-for="comparisonLaptop in comparisonLaptops" class="price_url_comp">
+						<!-- Laptop Price -->
+						<div class="price_comp">
+							<p> Price: {{comparisonLaptop.price}}</p>
+						</div>
+						<!-- website name with url -->
+						<div class="url_comp">
+							<a :href="comparisonLaptop.url"><p> From {{comparisonLaptop.website_name}} </p></a>
+						</div>
+					</div>
+					<hr>
+				</div>
+				<br>
+				<!-- Image button to go back to the product page -->
+				<img @click="searchLaptopsPagination" class="backImage" src="image/back.png">
+			</div>
+		</div>
+
+
+
+		<script src="product.js"> </script>
+
+        <br>
+		<br>
+		<br>
+    
+    		<!-- footer  -->
+		<div class="footer">
+		
+			<div>
+				<h1 class="title_footer"> PComparison</h1>
+			</div>
+			<div>
+				<h3 class="follow"> Follow Us</h2>
+				<a href="https://www.twitter.com/" class="fa fa-twitter"> </a>
+				<a href="https://www.youtube.com/" class="fa fa-youtube"> </a>
+			</div>
+			<br>
+			<div>
+					<h4 class="copyright"> Copyright © 2022 Sebastien Luckhoo All Rights Reserved</h3>
+			</div>
+					
+		</div>
+
+
+    </body>
+</html>
