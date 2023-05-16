@@ -18,7 +18,7 @@ const connectionPool = mysql.createPool({
     connectionLimit: 1,
     host: "localhost",
     user: "Seb",
-    password: "****",
+    password: "*****",
     database: "price_comparison",
     port: 8111,
     debug: false
